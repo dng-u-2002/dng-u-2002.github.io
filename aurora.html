@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eulerian Aurora · 김동우</title>
+<meta name="description" content="큐브 겉면을 한 번에 모두 지나가야 하는 3D 한붓그리기 퍼즐. 아이템·기믹 설계, 싱글 플레이 레벨 디자인, UGC 맵 에디터 기획, Discord CBT 운영까지의 기여 정리.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Eulerian Aurora · 김동우 게임 기획 포트폴리오">
+<meta property="og:description" content="3D 한붓그리기 퍼즐 · UGC · 2026 UNICON 전시 · 독창성 4.72/5">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/portfolio.css">
+</head>
+<body>
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+<nav class="pf-nav" aria-label="주요 메뉴">
+  <div class="pf-nav-inner">
+    <a class="pf-nav-name" href="index.html"><span class="pf-nav-logo" aria-hidden="true"><svg viewBox="0.9 1.8 21 21"><path fill-rule="evenodd" d="M6.6 21.2h10.8c.4 0 .7-.3.7-.7v-.9c0-.6-.5-1.1-1.1-1.1H7c-.6 0-1.1.5-1.1 1.1v.9c0 .4.3.7.7.7zM8 17.6c.2-2.4 2.5-3.5 2.6-5.3-.9.6-2.1.8-3.1.5l-1.4-.6c-.9-.4-1.4-1.3-1.1-2.1.5-1.2 1.7-2.5 3.2-3.7l1.3-3.4 1.7 2c3.3.2 6.3 2.8 6.6 6.8.2 2.4 0 4.3-.1 5.8zM9.6 8.1a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5z"/></svg></span>김동우</a>
+    <div class="pf-nav-links">
+      <a class="pf-nav-link" href="index.html#awards">Activities</a>
+      <a class="pf-nav-link is-current" href="index.html#projects" aria-current="page">Projects</a>
+      <a class="pf-nav-link" href="index.html#tools">Tools</a>
+      <a class="pf-btn pf-btn-primary pf-btn-sm" href="mailto:dongwoo0613@gmail.com">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main" class="container">
+
+  <div class="back-link-wrap"><a class="back-link" href="index.html#projects">←&nbsp;Back</a></div>
+
+  <!-- ============ 헤더 ============ -->
+  <header class="project-header">
+    <div class="pf-tags"><span class="pf-tag pf-tag-solid">Main Project</span></div>
+    <h1 class="project-title">Eulerian Aurora</h1>
+    <p class="project-lead">큐브의 겉면을 한 번에 지나가야 하는 3D 한붓그리기 퍼즐 게임<br>유저가 직접 맵을 만들어 업로드, 다른 유저의 맵을 플레이</p>
+    <div class="pf-tags">
+      <span class="pf-tag pf-tag-soft">3인 팀</span>
+      <span class="pf-tag pf-tag-soft">Windows</span>
+      <span class="pf-tag pf-tag-soft">UGC 맵 에디터</span>
+    </div>
+    <div class="pf-tags">
+      <span class="pf-tag pf-tag-outline">2026 UNICON 전시</span>
+    </div>
+
+    <!-- 대표 미디어 슬라이드: EA-01(트레일러 영상) · EA-02 · EA-03 · EA-04 · EA-05 -->
+    <div class="slider" data-slider role="region" aria-roledescription="carousel" aria-label="트레일러와 대표 스크린샷">
+      <div class="slider-stage" data-stage>
+        <div class="slide" data-slide role="group" aria-roledescription="slide" aria-label="1 / 5: 트레일러">
+          <!-- 첫 번째 슬라이드는 메인 페이지 카드 썸네일과 같은 미디어입니다. 바꾸면 index.html 썸네일도 같이 바꾸세요. -->
+          <video class="media-fill" controls autoplay muted loop playsinline preload="auto" poster="assets/aurora/EA-01-poster-1280w.webp" data-autoplay aria-label="Eulerian Aurora 트레일러">
+            <source src="assets/aurora/EA-01.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="slide" data-slide role="group" aria-roledescription="slide" aria-label="2 / 5" hidden>
+          <img src="assets/aurora/EA-02-1920w.webp" alt="맵 에디터 화면. 왼쪽에 길·지우개·플레이어·포탈·고스트·인버터·레이저·대시 도구, 오른쪽에 업로드·저장·테스트 버튼" width="1920" height="1199" loading="lazy" decoding="async" srcset="assets/aurora/EA-02-640w.webp 640w, assets/aurora/EA-02-1280w.webp 1280w, assets/aurora/EA-02-1920w.webp 1920w" sizes="(max-width: 1120px) 100vw, 1072px" data-full="assets/aurora/EA-02-1920w.webp">
+        </div>
+        <div class="slide" data-slide role="group" aria-roledescription="slide" aria-label="3 / 5" hidden>
+          <img src="assets/aurora/EA-03-1920w.webp" alt="싱글 플레이 허브. 별자리 모양으로 이어진 Tutorials, Polaris, Zodiac 맵을 고르는 화면" width="1920" height="1199" loading="lazy" decoding="async" srcset="assets/aurora/EA-03-640w.webp 640w, assets/aurora/EA-03-1280w.webp 1280w, assets/aurora/EA-03-1920w.webp 1920w" sizes="(max-width: 1120px) 100vw, 1072px" data-full="assets/aurora/EA-03-1920w.webp">
+        </div>
+        <div class="slide" data-slide role="group" aria-roledescription="slide" aria-label="4 / 5" hidden>
+          <img src="assets/aurora/EA-04-1920w.webp" alt="큐브 겉면을 따라 지나간 칸을 노랗게 칠하며 이동하는 플레이 화면" width="1920" height="1199" loading="lazy" decoding="async" srcset="assets/aurora/EA-04-640w.webp 640w, assets/aurora/EA-04-1280w.webp 1280w, assets/aurora/EA-04-1920w.webp 1920w" sizes="(max-width: 1120px) 100vw, 1072px" data-full="assets/aurora/EA-04-1920w.webp">
+        </div>
+        <div class="slide" data-slide role="group" aria-roledescription="slide" aria-label="5 / 5" hidden>
+          <img src="assets/aurora/EA-05-1920w.webp" alt="유저 맵 목록. 맵 이름과 제작자, 좋아요 수, 플레이 횟수가 표시된 카드" width="1920" height="1199" loading="lazy" decoding="async" srcset="assets/aurora/EA-05-640w.webp 640w, assets/aurora/EA-05-1280w.webp 1280w, assets/aurora/EA-05-1920w.webp 1920w" sizes="(max-width: 1120px) 100vw, 1072px" data-full="assets/aurora/EA-05-1920w.webp">
+        </div>
+        <button type="button" class="slider-btn slider-prev" data-prev aria-label="이전 슬라이드"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button type="button" class="slider-btn slider-next" data-next aria-label="다음 슬라이드"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+        <span class="slider-counter" data-counter aria-live="polite">1 / 5</span>
+      </div>
+      <div class="slider-dots">
+        <button type="button" class="slider-dot" data-dot aria-label="1번째 슬라이드 보기" aria-current="true"><span></span></button>
+        <button type="button" class="slider-dot" data-dot aria-label="2번째 슬라이드 보기"><span></span></button>
+        <button type="button" class="slider-dot" data-dot aria-label="3번째 슬라이드 보기"><span></span></button>
+        <button type="button" class="slider-dot" data-dot aria-label="4번째 슬라이드 보기"><span></span></button>
+        <button type="button" class="slider-dot" data-dot aria-label="5번째 슬라이드 보기"><span></span></button>
+      </div>
+    </div>
+
+    <div class="project-links">
+      <a class="pf-btn pf-btn-primary" href="https://drive.google.com/file/d/1nDUTdDvbLZnMFUdX_sQb7rcbJSy_PyeT/view?usp=drive_link" target="_blank" rel="noopener">Game Build</a>
+      <a class="pf-btn pf-btn-secondary" href="https://drive.google.com/drive/folders/1IGMLGUreO3WDR3LEqzpbtfKZpKzZaxUQ?usp=sharing" target="_blank" rel="noopener">Google Drive</a>
+      <a class="pf-btn pf-btn-secondary" href="https://github.com/1Seong/EulerianAurora" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </header>
+
+  <!-- ============ 핵심 수치 ============ -->
+  <section class="stat-strip" aria-label="핵심 수치">
+    <div class="stat">
+      <div class="stat-num">19<small>/23</small></div>
+      <div class="stat-name">직접 설계한 싱글 플레이 맵</div>
+      <div class="stat-note"></div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">4.72<small>/5.0</small></div>
+      <div class="stat-name">독창성 평가</div>
+      <div class="stat-note">2026 UNICON 시연 설문 18명</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">24</div>
+      <div class="stat-name">Discord CBT 참여자</div>
+      <div class="stat-note">2026.06.~08.</div>
+    </div>
+  </section>
+
+  <!-- ============ 기여 ============ -->
+  <section class="detail-section" aria-labelledby="contrib-title">
+    <div class="detail-section-head">
+      <header class="pf-sh"><h2 class="pf-sh-title" id="contrib-title">Contributions</h2></header>
+      <div class="pf-tags">
+        <span class="pf-tag pf-tag-soft">퍼즐 디자인</span>
+        <span class="pf-tag pf-tag-soft">레벨 디자인</span>
+        <span class="pf-tag pf-tag-outline">PM</span>
+      </div>
+    </div>
+
+    <!-- 기획 -->
+    <div class="contrib-group" id="design">
+      <div class="contrib-head"><h3>시스템/UX 디자인</h3><span>SYSTEM/UX DESIGN</span></div>
+      <div class="card-grid">
+
+        <article class="work-card">
+          <button type="button" class="work-thumb is-cover is-top" data-zoom data-caption="게임 루프 다이어그램" aria-label="게임 루프 다이어그램 크게 보기">
+            <img src="assets/aurora/EA-06-640w.webp" alt="타이틀 화면에서 싱글 플레이, 유저 맵 플레이, 맵 제작으로 갈라지는 게임 루프 순서도. 맵 제작은 편집, 테스트 플레이, 클리어 가능 여부 검증을 거쳐 서버에 업로드" width="1463" height="1605" loading="lazy" decoding="async" srcset="assets/aurora/EA-06-640w.webp 640w, assets/aurora/EA-06.webp 1463w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/aurora/EA-06.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">제안서</span></div>
+              <a class="doc-link" href="https://docs.google.com/document/d/1gi1SPIkaRlsSUx_k9FMmdvMGfHgq21XxpTJESthxexg/edit?usp=sharing" target="_blank" rel="noopener" aria-label="기획서 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">한붓그리기를 3차원에서</h4>
+            <p class="work-desc">한붓그리기 고전 퍼즐을 3차원 큐브에 접목<br>시점을 돌려 가며 보이지 않는 면을 상상할 것을 유도<br></p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="아이템·기믹 정리" aria-label="아이템·기믹 정리 크게 보기">
+            <img src="assets/aurora/EA-07.webp" alt="아이템 효과 정리 슬라이드. 한 방향 또는 모든 방향으로 벽에 닿을 때까지 색칠, 포탈, 색칠된 칸 재진입, 색칠 상태 반전" width="779" height="331" loading="lazy" decoding="async" data-full="assets/aurora/EA-07.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">시스템 디자인</span></div>
+              <a class="doc-link" href="https://docs.google.com/document/d/1grGjoCVvGhnIasnm32hURx7szOg3tHfPIym_PsjLkqk/edit?usp=sharing" target="_blank" rel="noopener" aria-label="아이템 상세 기획 문서 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">아이템과 기믹</h4>
+            <p class="work-desc">공식대로 풀리지 않도록 변수를 만드는 장치 설계<br>아이템과 기믹, 기존 룰을 조합해 퍼즐 난이도 조절 가능 <br></p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="카메라 시점 배치" aria-label="카메라 시점 배치 크게 보기">
+            <img src="assets/aurora/EA-08-640w.webp" alt="큐브 꼭짓점에 1부터 6까지 번호를 붙여 카메라 시점 전환 위치를 정리한 3D 시안" width="859" height="818" loading="lazy" decoding="async" srcset="assets/aurora/EA-08-640w.webp 640w, assets/aurora/EA-08.webp 859w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/aurora/EA-08.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">UX 디자인</span></div>
+              <a class="doc-link" href="https://docs.google.com/document/d/1gTDP1Ey839R4DvtIoLfJ0juoUsN0518HHoaebpaZBpY/edit?usp=sharing" target="_blank" rel="noopener" aria-label="카메라 시점 후보 문서 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">카메라와 조작</h4>
+            <p class="work-desc"> 큐브의 여덟 꼭짓점을 정면으로 보는 고정 시점<br>조작은 3차원의 여섯 방향에 QWEASD 할당<br>캐릭터가 어느 면에 있든 키 방향이 화면 기준으로 유지<br>카메라 시점은 마우스로 오로라를 클릭해 전환</p>
+          </div>
+        </article>
+
+
+      </div>
+    </div>
+
+    <!-- 레벨 디자인 -->
+    <div class="contrib-group" id="level">
+      <div class="contrib-head"><h3>레벨 디자인</h3><span>LEVEL DESIGN</span></div>
+      <div class="card-grid">
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="싱글 플레이 해금 흐름" aria-label="싱글 플레이 해금 흐름 크게 보기">
+            <img src="assets/aurora/EA-09-640w.webp" alt="싱글 플레이 해금 흐름. Polaris 1·2를 깨면 게자리 튜토리얼 4맵이 열리고, 튜토리얼을 모두 깨면 오리온·황도 12궁 14맵이 한꺼번에 열림" width="1785" height="1003" loading="lazy" decoding="async" srcset="assets/aurora/EA-09-640w.webp 640w, assets/aurora/EA-09-1280w.webp 1280w, assets/aurora/EA-09.webp 1785w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/aurora/EA-09.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">레벨 디자인</span></div>
+              <a class="doc-link" href="https://docs.google.com/presentation/d/1i-HrB7Okncs7X2CDsB_bxfm2xdKORRLx/edit?usp=sharing" target="_blank" rel="noopener" aria-label="싱글 플레이 허브 기획 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">싱글 플레이 허브</h4>
+            <p class="work-desc">순수 한붓그리기 / 기믹 튜토리얼 / 고난이도 퍼즐<br>세 구역으로 구분<br>순차적 해금 방식</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="별자리 맵 플레이 화면" aria-label="별자리 맵 플레이 화면 크게 보기">
+            <img src="assets/aurora/EA-10-640w.webp" alt="별 모양 기믹이 놓인 별자리 맵을 노란 경로로 칠하며 푸는 플레이 화면" width="1600" height="958" loading="lazy" decoding="async" srcset="assets/aurora/EA-10-640w.webp 640w, assets/aurora/EA-10.webp 1600w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/aurora/EA-10.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">퍼즐 디자인</span></div>
+              <a class="doc-link" href="https://drive.google.com/drive/folders/1-gFlq-miVP7licL3SU-aZOcv2Q-tQkS1?usp=sharing" target="_blank" rel="noopener" aria-label="퍼즐 해답 영상 폴더 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">맵 제작</h4>
+            <p class="work-desc">황도 12궁을 모티프로 별의 배치, 상징 동물의 모양 등 참고<br>자체 제작한 맵 에디터로 서버 업로드</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="UGC 기능 요구사항 · 맵 제작 및 편집" aria-label="UGC 기능 요구사항 · 맵 제작 및 편집 크게 보기">
+            <img src="assets/aurora/EA-11-640w.webp" alt="UGC 기능 요구사항 문서 중 맵 제작 및 편집 항목 11개" width="970" height="462" loading="lazy" decoding="async" srcset="assets/aurora/EA-11-640w.webp 640w, assets/aurora/EA-11.webp 970w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/aurora/EA-11.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">UGC 기획</span></div>
+              <a class="doc-link" href="https://docs.google.com/document/d/1-I_8_A2aPs0EHi5p7q5JJcxbcRJbtK4g7S6CgB1Am9c/edit?usp=sharing" target="_blank" rel="noopener" aria-label="UGC 기능 요구사항 문서 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">UGC 맵 에디터</h4>
+            <p class="work-desc">맵 제작 / 업로드 / 타인의 맵 플레이<br>기능 요구사항 정리<br> 에디터에서 타일과 아이템을 배치, 테스트한 뒤 업로드<br>유저가 찾아낸 기믹 조합이 다음 맵의 재료가 되는 선순환 유도</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- PM -->
+    <div class="contrib-group" id="pm">
+      <div class="contrib-head"><h3>PM</h3><span>PROJECT MANAGEMENT</span></div>
+      <div class="card-grid">
+
+        <article class="work-card">
+          <button type="button" class="work-thumb is-cover is-top" data-zoom data-caption="Discord CBT 버그 신고 채널" aria-label="Discord CBT 버그 신고 채널 크게 보기">
+            <img src="assets/aurora/EA-12-640w.webp" alt="Discord CBT 서버의 버그신고·건의사항 채널. 테스터가 버그 내용, 발생 상황, 빌드 버전을 정리해 올린 글" width="1583" height="1366" loading="lazy" decoding="async" srcset="assets/aurora/EA-12-640w.webp 640w, assets/aurora/EA-12.webp 1583w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/aurora/EA-12.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">CBT 운영</span></div>
+            </div>
+            <h4 class="work-title">Discord CBT 운영</h4>
+            <p class="work-desc">빌드 배포/ 피드백 수집을 Discord CBT로 진행<br>일정 조건을 충족한 테스터에 대한 리워드로 참여 유도<br>유저 맵 업로드 실제 서버 환경에서 테스트</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- QA -->
+  </section>
+
+  <!-- ============ 유저 피드백 ============ -->
+  <section class="detail-section" aria-labelledby="feedback-title">
+    <header class="pf-sh"><h2 class="pf-sh-title" id="feedback-title">User Feedback</h2></header>
+
+    <div class="survey-split">
+      <figure class="photo photo-fill">
+        <button type="button" class="photo-zoom" data-zoom data-caption="2026 UNICON · 오로리아 팀 현장 시연" aria-label="2026 UNICON 사진 크게 보기">
+          <img src="assets/aurora/unicon-2026.webp" alt="2026 UNICON 전시 부스에서 오로리아 팀원 세 명이 Eulerian Aurora 시연 화면 앞에서 엄지를 들어 보이는 사진" width="1200" height="900" loading="lazy" decoding="async" srcset="assets/aurora/unicon-2026-640w.webp 640w, assets/aurora/unicon-2026.webp 1200w" sizes="(max-width: 860px) 100vw, 526px" data-full="assets/aurora/unicon-2026.webp">
+        </button>
+        <figcaption>2026 UNICON · 오로리아 팀 현장 시연</figcaption>
+      </figure>
+      <div class="survey">
+        <div class="survey-intro">
+          <div class="survey-kicker">SURVEY</div>
+          <div class="survey-title">유저 설문 평균 점수</div>
+          <div class="survey-note">응답 18명<br>2026 UNICON 시연 현장에서 수집</div>
+        </div>
+        <div class="survey-bars">
+          <div class="bar">
+            <div class="bar-head"><span class="bar-name">재미</span><span class="bar-score">4.33 <span>/ 5</span></span></div>
+            <div class="bar-track" role="img" aria-label="재미 4.33점, 5점 만점"><span style="width: 86.6%;"></span></div>
+          </div>
+          <div class="bar">
+            <div class="bar-head"><span class="bar-name">독창성</span><span class="bar-score">4.72 <span>/ 5</span></span></div>
+            <div class="bar-track" role="img" aria-label="독창성 4.72점, 5점 만점"><span style="width: 94.4%;"></span></div>
+          </div>
+          <div class="bar">
+            <div class="bar-head"><span class="bar-name">연출 (그래픽·사운드)</span><span class="bar-score">4.61 <span>/ 5</span></span></div>
+            <div class="bar-track" role="img" aria-label="연출 4.61점, 5점 만점"><span style="width: 92.2%;"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="next-nav" aria-label="프로젝트 이동">
+    <a class="next-link prev-link" href="toki.html"><small>← 이전 프로젝트</small><strong>토끼의 거짓말</strong></a>
+  </nav>
+
+</main>
+
+<!-- 확대 보기 -->
+<dialog class="lightbox" data-lightbox aria-label="크게 보기">
+  <button type="button" class="lightbox-close" data-lightbox-close aria-label="닫기"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg></button>
+  <div class="lightbox-media" data-lightbox-media></div>
+  <div class="lightbox-caption" data-lightbox-caption></div>
+</dialog>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SQUARE::ERAUQS · 김동우</title>
+<meta name="description" content="핑크와 블루, 두 네모를 동시에 조작하고 시점을 뒤집어 길을 찾는 횡스크롤 퍼즐 플랫포머. 퍼즐·레벨 디자인, QA, PM 기여 정리.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SQUARE::ERAUQS · 김동우 게임 기획 포트폴리오">
+<meta property="og:description" content="전체 50개 스테이지 중 38개 직접 설계 · Steam 출시 · 무료 전환과 대규모 업데이트 주도">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/portfolio.css">
+</head>
+<body>
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+<nav class="pf-nav" aria-label="주요 메뉴">
+  <div class="pf-nav-inner">
+    <a class="pf-nav-name" href="index.html"><span class="pf-nav-logo" aria-hidden="true"><svg viewBox="0.9 1.8 21 21"><path fill-rule="evenodd" d="M6.6 21.2h10.8c.4 0 .7-.3.7-.7v-.9c0-.6-.5-1.1-1.1-1.1H7c-.6 0-1.1.5-1.1 1.1v.9c0 .4.3.7.7.7zM8 17.6c.2-2.4 2.5-3.5 2.6-5.3-.9.6-2.1.8-3.1.5l-1.4-.6c-.9-.4-1.4-1.3-1.1-2.1.5-1.2 1.7-2.5 3.2-3.7l1.3-3.4 1.7 2c3.3.2 6.3 2.8 6.6 6.8.2 2.4 0 4.3-.1 5.8zM9.6 8.1a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5z"/></svg></span>김동우</a>
+    <div class="pf-nav-links">
+      <a class="pf-nav-link" href="index.html#awards">Activities</a>
+      <a class="pf-nav-link is-current" href="index.html#projects" aria-current="page">Projects</a>
+      <a class="pf-nav-link" href="index.html#tools">Tools</a>
+      <a class="pf-btn pf-btn-primary pf-btn-sm" href="mailto:dongwoo0613@gmail.com">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main" class="container">
+
+  <div class="back-link-wrap"><a class="back-link" href="index.html#projects">←&nbsp;Back</a></div>
+
+  <!-- ============ 헤더 ============ -->
+  <header class="project-header">
+    <div class="pf-tags"><span class="pf-tag pf-tag-solid">Main Project</span></div>
+    <h1 class="project-title">SQUARE::ERAUQS</h1>
+    <p class="project-lead">핑크와 블루, 두 네모를 동시에 조작하고 시점을 뒤집어 길을 찾는 횡스크롤 퍼즐 플랫포머</p>
+    <div class="pf-tags">
+      <span class="pf-tag pf-tag-soft">6인 팀</span>
+      <span class="pf-tag pf-tag-soft">Windows</span>
+      <span class="pf-tag pf-tag-soft">Mac</span>
+      <span class="pf-tag pf-tag-soft">Mobile</span>
+      <span class="pf-tag pf-tag-soft">한국어 / ENG</span>
+    </div>
+    <div class="pf-tags">
+      <span class="pf-tag pf-tag-outline">2025 UNICON 상위 20팀 (챌린저) 선정</span>
+      <span class="pf-tag pf-tag-outline">2026 UNICON 전시</span>
+      <span class="pf-tag pf-tag-outline">2026 중앙대 동아리박람회 전시</span>
+    </div>
+
+    <!-- 대표 미디어 슬라이드: SQ-01(영상) · SQ-02 · SQ-03 · SQ-04 -->
+    <div class="slider" data-slider role="region" aria-roledescription="carousel" aria-label="대표 이미지와 플레이 영상">
+      <div class="slider-stage" data-stage>
+        <div class="slide" data-slide role="group" aria-roledescription="slide" aria-label="1 / 4: 플레이 영상">
+          <!-- 첫 번째 슬라이드는 메인 페이지 카드 썸네일과 같은 미디어입니다. 바꾸면 index.html 썸네일도 같이 바꾸세요. -->
+          <!-- assets/square/SQ-01.mp4 가 없으면 Google Drive 플레이어로 대신 재생합니다. -->
+          <video class="media-fill" controls autoplay muted loop playsinline preload="auto" poster="assets/square/SQ-01-poster.webp" data-autoplay data-drive-id="1X2URi1Q1hcTiGAwtFc2AgN-7W0GzcWxX" aria-label="SQUARE::ERAUQS 플레이 영상">
+            <source src="assets/square/SQ-01.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="slide" data-slide role="group" aria-roledescription="slide" aria-label="2 / 4" hidden>
+          <img src="assets/square/SQ-02.webp" alt="EPISODE 5-1 플레이 화면. 핑크·블루 네모와 포털, 점프대가 배치된 스테이지" width="1920" height="1080" decoding="async" srcset="assets/square/SQ-02-640w.webp 640w, assets/square/SQ-02-1280w.webp 1280w, assets/square/SQ-02.webp 1920w" sizes="(max-width: 1120px) 100vw, 1072px" data-full="assets/square/SQ-02.webp">
+        </div>
+        <div class="slide" data-slide role="group" aria-roledescription="slide" aria-label="3 / 4" hidden>
+          <img src="assets/square/SQ-03.webp" alt="EPISODE 4-1 플레이 화면. SHIFT 키로 시점을 전환하라는 안내" width="1920" height="1080" loading="lazy" decoding="async" srcset="assets/square/SQ-03-640w.webp 640w, assets/square/SQ-03-1280w.webp 1280w, assets/square/SQ-03.webp 1920w" sizes="(max-width: 1120px) 100vw, 1072px" data-full="assets/square/SQ-03.webp">
+        </div>
+        <div class="slide" data-slide role="group" aria-roledescription="slide" aria-label="4 / 4" hidden>
+          <img src="assets/square/SQ-04-1920w.webp" alt="EPISODE 4-5 모바일 빌드 화면. 터치 조작 버튼이 배치된 스테이지" width="1920" height="1200" loading="lazy" decoding="async" srcset="assets/square/SQ-04-640w.webp 640w, assets/square/SQ-04-1280w.webp 1280w, assets/square/SQ-04-1920w.webp 1920w" sizes="(max-width: 1120px) 100vw, 1072px" data-full="assets/square/SQ-04-1920w.webp">
+        </div>
+        <button type="button" class="slider-btn slider-prev" data-prev aria-label="이전 슬라이드"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button type="button" class="slider-btn slider-next" data-next aria-label="다음 슬라이드"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+        <span class="slider-counter" data-counter aria-live="polite">1 / 4</span>
+      </div>
+      <div class="slider-dots">
+        <button type="button" class="slider-dot" data-dot aria-label="1번째 슬라이드 보기" aria-current="true"><span></span></button>
+        <button type="button" class="slider-dot" data-dot aria-label="2번째 슬라이드 보기"><span></span></button>
+        <button type="button" class="slider-dot" data-dot aria-label="3번째 슬라이드 보기"><span></span></button>
+        <button type="button" class="slider-dot" data-dot aria-label="4번째 슬라이드 보기"><span></span></button>
+      </div>
+    </div>
+
+    <div class="project-links">
+      <a class="pf-btn pf-btn-primary" href="https://store.steampowered.com/app/4331920/SQUAREERAUQS/" target="_blank" rel="noopener">Play on Steam</a>
+      <a class="pf-btn pf-btn-secondary" href="https://drive.google.com/file/d/1pgzGDkZZL8BRn1Nx_LQDZYMZqQnd9c2B/view?usp=drive_link" target="_blank" rel="noopener">모바일 빌드</a>
+      <a class="pf-btn pf-btn-secondary" href="https://drive.google.com/drive/folders/1CryMZz71U2earFqjluCkLWHVGd4bTEiC" target="_blank" rel="noopener">Google Drive</a>
+      <a class="pf-btn pf-btn-secondary" href="https://github.com/1Seong/SQUARE-ERAUQS" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </header>
+
+  <!-- ============ 핵심 수치 ============ -->
+  <section class="stat-strip" aria-label="핵심 수치">
+    <div class="stat">
+      <div class="stat-num">38<small>/50</small></div>
+      <div class="stat-name">설계한 스테이지</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">4.49<small>/5</small></div>
+      <div class="stat-name">퍼즐 기믹 만족도</div>
+      <div class="stat-note">각종 전시 현장 설문 49명</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">27<small>/35</small></div>
+      <div class="stat-name">리포트한 QA 이슈</div>
+      <div class="stat-note"></div>
+    </div>
+  </section>
+
+  <!-- ============ 기여 ============ -->
+  <section class="detail-section" aria-labelledby="contrib-title">
+    <div class="detail-section-head">
+      <header class="pf-sh"><h2 class="pf-sh-title" id="contrib-title">Contributions</h2></header>
+      <div class="pf-tags">
+        <span class="pf-tag pf-tag-soft">퍼즐 디자인</span>
+        <span class="pf-tag pf-tag-soft">시스템 디자인</span>
+        <span class="pf-tag pf-tag-outline">레벨 디자인</span>
+        <span class="pf-tag pf-tag-outline">PM</span>
+        <span class="pf-tag pf-tag-outline">QA</span>
+      </div>
+    </div>
+
+    <!-- 기획 -->
+    <div class="contrib-group" id="design">
+      <div class="contrib-head"><h3>기획</h3><span>GAME DESIGN</span></div>
+      <div class="card-grid">
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="제안서 · 게임의 컨셉" aria-label="제안서 이미지 크게 보기">
+            <img src="assets/square/SQ-05-640w.webp" alt="제안서 중 게임 컨셉 페이지. 두 네모, 간단한 조작, 바닥과 천장의 반대 방향 중력 설명" width="821" height="592" loading="lazy" decoding="async" srcset="assets/square/SQ-05-640w.webp 640w, assets/square/SQ-05.webp 821w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/square/SQ-05.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">제안서</span></div>
+              <a class="doc-link" href="https://drive.google.com/file/d/1IQhx2NNrnu7v1LVqVcUubYVipd6-kmlf/view?usp=sharing" target="_blank" rel="noopener" aria-label="제안서 문서 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">두 네모를 동시에</h4>
+            <p class="work-desc">천장과 바닥에서 서로 반대 방향의 중력을 받고, <br>한 번의 입력으로 동시에 움직여 각자 색의 문을 찾는 컨셉을 제안서로 정리 </p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="오브젝트 · 기믹 설계 문서" aria-label="오브젝트 · 기믹 문서 이미지 크게 보기">
+            <img src="assets/square/SQ-06.webp" alt="오브젝트·기믹 문서. 점프대, 포털, 배터리의 기능, 아이콘, 연출을 정리한 표" width="775" height="686" loading="lazy" decoding="async" data-full="assets/square/SQ-06.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">시스템 디자인</span></div>
+              <a class="doc-link" href="https://drive.google.com/file/d/1r6Yxa0xdZ7Rb3C3ICcnQ2IgYyqdeyLm0/view?usp=sharing" target="_blank" rel="noopener" aria-label="오브젝트 · 기믹 문서 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">오브젝트 · 기믹 설계</h4>
+            <p class="work-desc">기믹의 모든 효과를 칸과 초 단위로 정의<br>상호 작용과 소모성 여부 등 변수를 고려하여 스펙 결정</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="게임 루프 다이어그램" aria-label="게임 루프 다이어그램 크게 보기">
+            <img src="assets/square/SQ-07-640w.webp" alt="게임 루프 다이어그램. 게임 시작, 퍼즐 플레이, 스테이지 클리어, 허브 스테이지, 크레딧 스테이지로 이어지는 흐름" width="900" height="592" loading="lazy" decoding="async" srcset="assets/square/SQ-07-640w.webp 640w, assets/square/SQ-07.webp 900w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/square/SQ-07.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">시스템 디자인</span></div>
+            </div>
+            <h4 class="work-title">게임 루프</h4>
+            <p class="work-desc">Entry Point, 허브 스테이지, 크레딧 연출을 포함한 <br>게임 루프 디자인</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="Stage 4-4 퍼즐 맵 설계" aria-label="퍼즐 맵 설계 이미지 크게 보기">
+            <img src="assets/square/SQ-08.webp" alt="Stage 4-4 퍼즐 맵 설계도. 위아래로 나뉜 맵에 블록과 이동 순서를 표시" width="477" height="561" loading="lazy" decoding="async" data-full="assets/square/SQ-08.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">퍼즐 디자인</span><span class="pf-tag pf-tag-outline">레벨 디자인</span></div>
+              <a class="doc-link" href="https://drive.google.com/file/d/1jhpU0LA97ggAW79n8DiIFdknWypEP44d/view?usp=sharing" target="_blank" rel="noopener" aria-label="퍼즐 디자인 문서 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">총 50개의 퍼즐 맵</h4>
+            <p class="work-desc">초기 25개는 그림으로 시각화 후 전달,<br>업데이트 때 추가된 25개는 내부 제작한 <br>맵 에디터로 편집, JSON 파일로 전달</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="인게임 UI 화면 설계 (Episode 1-1)" aria-label="UI 화면 설계 이미지 크게 보기">
+            <img src="assets/square/SQ-09-640w.webp" alt="인게임 UI 화면 설계. 좌측 메뉴 버튼, 스테이지 넘버링, 핑크·블루 문, 플레이 영역에 대한 주석" width="893" height="496" loading="lazy" decoding="async" srcset="assets/square/SQ-09-640w.webp 640w, assets/square/SQ-09.webp 893w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/square/SQ-09.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">UI/UX</span></div>
+              <a class="doc-link" href="https://drive.google.com/file/d/12IqPktueCrlfOk5qsOA0TAOVjAU5bwbk/view?usp=sharing" target="_blank" rel="noopener" aria-label="UI 디자인 문서 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">PC/Mobile 환경 UI 설계</h4>
+            <p class="work-desc">상단은 핑크, 하단은 블루 색조로 두 중력 영역을 구분, <br>버튼 첫 글자를 강조해 단축키를 표시<br>모바일에서는 가상 방향키와 각종 버튼으로 <br>키보드 조작을 대체</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <!-- 카드에서는 소리 없이 자동재생, 누르면 소리와 함께 크게 재생합니다 -->
+          <button type="button" class="work-thumb work-thumb-video" data-zoom data-video-src="assets/square/SQ-10.mp4" data-drive-id="1RrdhFO0P1K8Os7OiyFAyKUcuxpjVMKQD" data-caption="크레딧 스테이지 플레이 영상" aria-label="크레딧 스테이지 플레이 영상 크게 보기">
+            <video muted loop playsinline preload="none" poster="assets/square/SQ-10-poster.webp" data-autoplay aria-hidden="true"><source src="assets/square/SQ-10-card.mp4" type="video/mp4"></video>
+            <span class="video-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>영상</span>
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">연출</span></div>
+              <a class="doc-link" href="https://drive.google.com/file/d/1KhmJrCJJzWFo0ilVQbW-kb8m6Cgtrd-3/view?usp=sharing" target="_blank" rel="noopener" aria-label="크레딧 스테이지 문서 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">크레딧까지 스테이지로</h4>
+            <p class="work-desc">엔딩 크레딧을 직접 플레이하는 3개 스테이지로 설계<br>인게임 맵을 좌우반전해 재사용하고 배경을 크레딧 문구로 채웠고, 글씨가 잘 보이도록 VFX와 스테이지 스트링 제거</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- QA -->
+    <div class="contrib-group" id="qa">
+      <div class="contrib-head"><h3>QA</h3><span>QUALITY ASSURANCE</span></div>
+      <div class="card-grid">
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="QA 점검표" aria-label="QA 점검표 이미지 크게 보기">
+            <img src="assets/square/SQ-11-640w.webp" alt="QA 점검표. 상태, 유형, 빌드 적용 여부, 문서, 보고자, 비고 열로 이슈를 관리하는 시트" width="1630" height="670" loading="lazy" decoding="async" srcset="assets/square/SQ-11-640w.webp 640w, assets/square/SQ-11-1280w.webp 1280w, assets/square/SQ-11.webp 1630w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/square/SQ-11.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">QA 프로세스</span></div>
+              <a class="doc-link" href="https://docs.google.com/spreadsheets/d/1-eGDIEAFwoTwJuYDjnPrFnmGSa9eE8IL7ZH3_mnJYps/edit?usp=sharing" target="_blank" rel="noopener" aria-label="QA 점검표 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">QA 환경 구축</h4>
+            <p class="work-desc">외부 직무 경험에서 익힌 이슈 기록 방식을 도입<br>상태, 유형, 빌드 적용 여부, 관련 문서, 보고자, 해결 노트를 기록해 이슈 35건을 추적, 27건을 직접 리포트</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="버그 리포트 양식 예시" aria-label="버그 리포트 예시 이미지 크게 보기">
+            <img src="assets/square/SQ-12-640w.webp" alt="버그 리포트 예시. 날짜와 레이블이 붙은 제목, 이슈 내용, 재현 방법 항목" width="814" height="730" loading="lazy" decoding="async" srcset="assets/square/SQ-12-640w.webp 640w, assets/square/SQ-12.webp 814w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/square/SQ-12.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">QA 프로세스</span></div>
+              <a class="doc-link" href="https://docs.google.com/document/d/1XpmTXGg27oAzsllX7gvD5wKyfbwrUJ606TEs2vHilGY/edit?usp=sharing" target="_blank" rel="noopener" aria-label="버그 리포트 양식 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">리포트 양식 규정</h4>
+            <p class="work-desc">재현 방법, 발생 빈도, 버전, 영상을 필수 항목으로 설정<br><br></p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- PM -->
+    <div class="contrib-group" id="pm">
+      <div class="contrib-head"><h3>PM</h3><span>PROJECT MANAGEMENT</span></div>
+      <div class="card-grid">
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="무료 전환 · Steam 스토어 무료 플레이" aria-label="무료 전환 이미지 크게 보기">
+            <img src="assets/square/SQ-13.webp" alt="Steam 스토어의 SQUARE::ERAUQS 무료 플레이 버튼" width="732" height="226" loading="lazy" decoding="async" data-full="assets/square/SQ-13.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">운영 의사결정</span></div>
+            </div>
+            <h4 class="work-title">무료 전환 결정</h4>
+            <p class="work-desc">$1.99 출시 후 판매가 9건에 그쳐 예상보다 미달<br>노출과 첫인상의 문제라고 판단,<br> 무료 전환을 포함한 대규모 변경 주도 <br></p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="10월 업데이트 공지 · 전면 무료화 및 신규 맵 추가" aria-label="10월 업데이트 공지 이미지 크게 보기">
+            <img src="assets/square/SQ-14.webp" alt="Steam 업데이트 공지. 10월 1일부터 무료, 50개의 맵과 함께 플레이" width="721" height="552" loading="lazy" decoding="async" data-full="assets/square/SQ-14.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">라이브 운영</span><span class="pf-tag pf-tag-outline">업데이트</span></div>
+              <a class="doc-link" href="https://store.steampowered.com/news/app/4331920/view/689770226735120471?l=koreana" target="_blank" rel="noopener" aria-label="Steam 업데이트 공지 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">대규모 업데이트</h4>
+            <p class="work-desc">무료 전환, 신규 맵 25개, Mac 지원, 맵 순서 개편</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 유저 피드백 ============ -->
+  <section class="detail-section" aria-labelledby="feedback-title">
+    <header class="pf-sh"><h2 class="pf-sh-title" id="feedback-title">User Feedback</h2></header>
+
+    <div class="survey">
+      <div class="survey-intro">
+        <div class="survey-kicker">SURVEY</div>
+        <div class="survey-title">유저 설문 평균 점수</div>
+        <div class="survey-note">응답 49명<br>참가 대회/전시에서 수집</div>
+      </div>
+      <div class="survey-bars">
+        <div class="bar">
+          <div class="bar-head"><span class="bar-name">재미</span><span class="bar-score">4.49 <span>/ 5</span></span></div>
+          <div class="bar-track" role="img" aria-label="재미 4.49점, 5점 만점"><span style="width: 89.8%;"></span></div>
+        </div>
+        <div class="bar">
+          <div class="bar-head"><span class="bar-name">독창성</span><span class="bar-score">3.94 <span>/ 5</span></span></div>
+          <div class="bar-track" role="img" aria-label="독창성 3.94점, 5점 만점"><span style="width: 78.8%;"></span></div>
+        </div>
+        <div class="bar">
+          <div class="bar-head"><span class="bar-name">비주얼</span><span class="bar-score">4.51 <span>/ 5</span></span></div>
+          <div class="bar-track" role="img" aria-label="비주얼 4.51점, 5점 만점"><span style="width: 90.2%;"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 전시 현장 사진 -->
+    <div class="photo-row">
+      <figure class="photo">
+        <button type="button" class="photo-zoom" data-zoom data-caption="2025 UNICON · 챌린저 팀 선정 (상위 20팀)" aria-label="2025 UNICON 사진 크게 보기">
+          <img src="assets/home/unicon-2025.webp" alt="2025 UNICON 전시장에서 SQUARE::ERAUQS 팀원 다섯 명이 게임 소개판을 들고 찍은 단체 사진" width="1200" height="900" loading="lazy" decoding="async" srcset="assets/home/unicon-2025-640w.webp 640w, assets/home/unicon-2025.webp 1200w" sizes="(max-width: 860px) 100vw, 526px" data-full="assets/home/unicon-2025.webp">
+        </button>
+        <figcaption>2025 UNICON · 챌린저 팀 선정 (상위 20팀)</figcaption>
+      </figure>
+      <figure class="photo">
+        <button type="button" class="photo-zoom" data-zoom data-caption="2026 UNICON · 현장 플레이 테스트" aria-label="2026 UNICON 사진 크게 보기">
+          <img src="assets/home/unicon-2026.webp" alt="2026 UNICON 전시장에서 관람객들이 노트북으로 SQUARE::ERAUQS를 플레이하는 모습" width="1200" height="900" loading="lazy" decoding="async" srcset="assets/home/unicon-2026-640w.webp 640w, assets/home/unicon-2026.webp 1200w" sizes="(max-width: 860px) 100vw, 526px" data-full="assets/home/unicon-2026.webp">
+        </button>
+        <figcaption>2026 UNICON · 현장 플레이 테스트</figcaption>
+      </figure>
+    </div>
+
+    <div class="card-grid">
+
+      <article class="work-card">
+        <button type="button" class="work-thumb" data-zoom data-caption="힌트 시스템 화면" aria-label="힌트 시스템 화면 크게 보기">
+          <img src="assets/square/SQ-15-640w.webp" alt="힌트 시스템 화면. 맵의 위아래 중력 방향을 알려 주는 힌트 말풍선" width="1003" height="504" loading="lazy" decoding="async" srcset="assets/square/SQ-15-640w.webp 640w, assets/square/SQ-15.webp 1003w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/square/SQ-15.webp">
+        </button>
+        <div class="feedback-body">
+          <div class="work-meta">
+            <div class="pf-tags"><span class="pf-tag pf-tag-outline">시스템 디자인</span><span class="pf-tag pf-tag-outline">UX 개선</span></div>
+            <a class="doc-link" href="https://docs.google.com/spreadsheets/d/1j1NMTkwWdXMTLSIO4EPpJKkDoWg0GcTXi872bkwWpv4/edit?usp=sharing" target="_blank" rel="noopener" aria-label="힌트 시스템 문서 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+          </div>
+          <h4 class="work-title">힌트 시스템 도입</h4>
+          <div class="feedback-quote">
+            <span class="feedback-label">피드백</span>
+            <p class="feedback-text">기믹 설명이 부족함<br></p>
+          </div>
+          <div class="feedback-change">
+            <span class="feedback-label feedback-label-brand">반영</span>
+            <p class="feedback-text">맵마다 열어 볼 수 있는 힌트를 도입해 기믹의 작동 방식을 암시<br>막혔을 때 힌트를 열면 기믹을 이해할 수 있는 수준으로 설계</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <button type="button" class="work-thumb" data-zoom data-caption="변경된 EP1 맵 구성" aria-label="변경된 EP1 맵 구성 크게 보기">
+          <img src="assets/square/SQ-16-640w.webp" alt="스테이지 9와 10의 맵 구성 비교와 순서 변경 검토 코멘트" width="1594" height="614" loading="lazy" decoding="async" srcset="assets/square/SQ-16-640w.webp 640w, assets/square/SQ-16.webp 1594w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/square/SQ-16.webp">
+        </button>
+        <div class="feedback-body">
+          <div class="work-meta">
+            <div class="pf-tags"><span class="pf-tag pf-tag-outline">레벨 디자인</span></div>
+            <a class="doc-link" href="https://docs.google.com/document/d/15-WVqtVD23Ot6-uA-wcOpVcYRShp9YNGf_zwgSESzo0/edit?usp=sharing" target="_blank" rel="noopener" aria-label="맵 순서 변경 문서 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+          </div>
+          <h4 class="work-title">맵 순서 변경</h4>
+          <div class="feedback-quote">
+            <span class="feedback-label">받은 피드백</span>
+            <p class="feedback-text">재미있는 기믹이 너무 후반부에 등장</p>
+          </div>
+          <div class="feedback-change">
+            <span class="feedback-label feedback-label-brand">반영</span>
+            <p class="feedback-text">에피소드마다 기믹을 하나씩 소개하던 순서를 바꿔, EP.1에서 모든 기믹을 쉬운 난이도로 한 번씩 경험하도록 레벨링</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <button type="button" class="work-thumb is-cover" data-zoom data-caption="신규 맵 25개 · 스테이지 선택 화면" aria-label="신규 맵 스테이지 선택 화면 크게 보기">
+          <img src="assets/square/SQ-17-640w.webp" alt="CHOOSE THE STAGE 스테이지 선택 화면. 번호가 붙은 문들" width="1672" height="1060" loading="lazy" decoding="async" srcset="assets/square/SQ-17-640w.webp 640w, assets/square/SQ-17-1280w.webp 1280w, assets/square/SQ-17.webp 1672w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/square/SQ-17.webp">
+        </button>
+        <div class="feedback-body">
+          <div class="work-meta">
+            <div class="pf-tags"><span class="pf-tag pf-tag-outline">퍼즐 디자인</span><span class="pf-tag pf-tag-outline">라이브 운영</span></div>
+            <a class="doc-link" href="https://store.steampowered.com/news/app/4331920/view/689770226735120471?l=koreana" target="_blank" rel="noopener" aria-label="Steam 업데이트 공지 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+          </div>
+          <h4 class="work-title">볼륨 확장</h4>
+          <div class="feedback-quote">
+            <span class="feedback-label">받은 피드백</span>
+            <p class="feedback-text">플레이 타임이 적어서 아쉽다</p>
+          </div>
+          <div class="feedback-change">
+            <span class="feedback-label feedback-label-brand">반영</span>
+            <p class="feedback-text">2026.10.01 업데이트로 신규 맵 25개를 추가해 <br>맵 볼륨을 두 배로 확장</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <nav class="next-nav" aria-label="프로젝트 이동">
+    <a class="next-link" href="toki.html"><small>다음 프로젝트 →</small><strong>토끼의 거짓말</strong></a>
+  </nav>
+
+</main>
+
+<!-- 확대 보기 -->
+<dialog class="lightbox" data-lightbox aria-label="크게 보기">
+  <button type="button" class="lightbox-close" data-lightbox-close aria-label="닫기"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg></button>
+  <div class="lightbox-media" data-lightbox-media></div>
+  <div class="lightbox-caption" data-lightbox-caption></div>
+</dialog>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>토끼의 거짓말 · 김동우</title>
+<meta name="description" content="족보와 블러핑을 기반으로 하는 논 베팅 3인 카드 게임. 족보·참가/퇴청·1:1 스페셜 룰 설계, 화면 명세, Steam 출시와 봇 업데이트까지의 기여 정리.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="토끼의 거짓말 · 김동우 게임 기획 포트폴리오">
+<meta property="og:description" content="CIEN 2025 튜토리얼 프로젝트 1위 · Steam 출시 · 사용자 리뷰 13건 중 12건 추천">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/portfolio.css">
+</head>
+<body>
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+<nav class="pf-nav" aria-label="주요 메뉴">
+  <div class="pf-nav-inner">
+    <a class="pf-nav-name" href="index.html"><span class="pf-nav-logo" aria-hidden="true"><svg viewBox="0.9 1.8 21 21"><path fill-rule="evenodd" d="M6.6 21.2h10.8c.4 0 .7-.3.7-.7v-.9c0-.6-.5-1.1-1.1-1.1H7c-.6 0-1.1.5-1.1 1.1v.9c0 .4.3.7.7.7zM8 17.6c.2-2.4 2.5-3.5 2.6-5.3-.9.6-2.1.8-3.1.5l-1.4-.6c-.9-.4-1.4-1.3-1.1-2.1.5-1.2 1.7-2.5 3.2-3.7l1.3-3.4 1.7 2c3.3.2 6.3 2.8 6.6 6.8.2 2.4 0 4.3-.1 5.8zM9.6 8.1a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5z"/></svg></span>김동우</a>
+    <div class="pf-nav-links">
+      <a class="pf-nav-link" href="index.html#awards">Activities</a>
+      <a class="pf-nav-link is-current" href="index.html#projects" aria-current="page">Projects</a>
+      <a class="pf-nav-link" href="index.html#tools">Tools</a>
+      <a class="pf-btn pf-btn-primary pf-btn-sm" href="mailto:dongwoo0613@gmail.com">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main" class="container">
+
+  <div class="back-link-wrap"><a class="back-link" href="index.html#projects">←&nbsp;Back</a></div>
+
+  <!-- ============ 헤더 ============ -->
+  <header class="project-header">
+    <div class="pf-tags"><span class="pf-tag pf-tag-solid">Main Project</span></div>
+    <h1 class="project-title">토끼의 거짓말</h1>
+    <p class="project-lead">족보와 블러핑을 기반으로 하는 논 베팅 3인 카드 게임<br>한국의 달토끼 설화 모티프</p>
+    <div class="pf-tags">
+      <span class="pf-tag pf-tag-soft">4인 팀</span>
+      <span class="pf-tag pf-tag-soft">Windows</span>
+      <span class="pf-tag pf-tag-soft">Mac</span>
+      <span class="pf-tag pf-tag-soft">3인 온라인 멀티</span>
+      <span class="pf-tag pf-tag-soft">한국어 (영·일·중 준비 중)</span>
+    </div>
+    <div class="pf-tags">
+      <span class="pf-tag pf-tag-outline">중앙대 CIEN 2025 튜토리얼 프로젝트 1위</span>
+    </div>
+
+    <!-- 대표 미디어 슬라이드: TK-01(영상) · TK-02 · TK-03 · TK-04 -->
+    <div class="slider" data-slider role="region" aria-roledescription="carousel" aria-label="대표 이미지와 플레이 영상">
+      <div class="slider-stage" data-stage>
+        <div class="slide" data-slide role="group" aria-roledescription="slide" aria-label="1 / 4: 플레이 영상">
+          <!-- 첫 번째 슬라이드는 메인 페이지 카드 썸네일과 같은 미디어입니다. 바꾸면 index.html 썸네일도 같이 바꾸세요. -->
+          <!-- assets/toki/TK-01.mp4 가 없으면 Google Drive 플레이어로 대신 재생합니다. -->
+          <video class="media-fill" controls autoplay muted loop playsinline preload="auto" poster="assets/toki/TK-01-poster.webp" data-autoplay data-drive-id="1bGB2uQuDVzPeHTicU1-YHSDd2AVi4KUU" aria-label="토끼의 거짓말 플레이 영상">
+            <source src="assets/toki/TK-01.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="slide" data-slide role="group" aria-roledescription="slide" aria-label="2 / 4" hidden>
+          <img src="assets/toki/TK-02.webp" alt="3장 모드에서 버릴 카드 한 장을 고르는 인게임 화면" width="1920" height="1081" loading="lazy" decoding="async" srcset="assets/toki/TK-02-640w.webp 640w, assets/toki/TK-02-1280w.webp 1280w, assets/toki/TK-02.webp 1920w" sizes="(max-width: 1120px) 100vw, 1072px" data-full="assets/toki/TK-02.webp">
+        </div>
+        <div class="slide" data-slide role="group" aria-roledescription="slide" aria-label="3 / 4" hidden>
+          <img src="assets/toki/TK-03.webp" alt="한 판이 끝나고 꼴찌를 알리는 결과 화면. 참가와 퇴청을 고른 플레이어의 패가 공개됨" width="1920" height="1081" loading="lazy" decoding="async" srcset="assets/toki/TK-03-640w.webp 640w, assets/toki/TK-03-1280w.webp 1280w, assets/toki/TK-03.webp 1920w" sizes="(max-width: 1120px) 100vw, 1072px" data-full="assets/toki/TK-03.webp">
+        </div>
+        <div class="slide" data-slide role="group" aria-roledescription="slide" aria-label="4 / 4" hidden>
+          <img src="assets/toki/TK-04.webp" alt="달토끼 캐릭터 표정으로 감정을 표현하는 이모티콘 선택 창" width="1920" height="1081" loading="lazy" decoding="async" srcset="assets/toki/TK-04-640w.webp 640w, assets/toki/TK-04-1280w.webp 1280w, assets/toki/TK-04.webp 1920w" sizes="(max-width: 1120px) 100vw, 1072px" data-full="assets/toki/TK-04.webp">
+        </div>
+        <button type="button" class="slider-btn slider-prev" data-prev aria-label="이전 슬라이드"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button type="button" class="slider-btn slider-next" data-next aria-label="다음 슬라이드"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+        <span class="slider-counter" data-counter aria-live="polite">1 / 4</span>
+      </div>
+      <div class="slider-dots">
+        <button type="button" class="slider-dot" data-dot aria-label="1번째 슬라이드 보기" aria-current="true"><span></span></button>
+        <button type="button" class="slider-dot" data-dot aria-label="2번째 슬라이드 보기"><span></span></button>
+        <button type="button" class="slider-dot" data-dot aria-label="3번째 슬라이드 보기"><span></span></button>
+        <button type="button" class="slider-dot" data-dot aria-label="4번째 슬라이드 보기"><span></span></button>
+      </div>
+    </div>
+
+    <div class="project-links">
+      <a class="pf-btn pf-btn-primary" href="https://store.steampowered.com/app/4081810/" target="_blank" rel="noopener">Play on Steam</a>
+      <a class="pf-btn pf-btn-secondary" href="https://circular-texture-f35.notion.site/225edf5abe18811d83bece9ac88ac0a8" target="_blank" rel="noopener">Notion</a>
+    </div>
+  </header>
+
+  <!-- ============ 핵심 수치 ============ -->
+  <section class="stat-strip" aria-label="핵심 수치">
+    <div class="stat">
+      <div class="stat-num">354</div>
+      <div class="stat-name">Steam Lifetime UV</div>
+      <div class="stat-note">26.10.23. 기준</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">12<small>/13</small></div>
+      <div class="stat-name">Steam 평가 긍정적</div>
+      <div class="stat-note">26.10.23. 기준</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">176</div>
+      <div class="stat-name">Steam 위시리스트</div>
+      <div class="stat-note">26.10.23. 기준</div>
+    </div>
+  </section>
+
+  <!-- ============ 기여 ============ -->
+  <section class="detail-section" aria-labelledby="contrib-title">
+    <div class="detail-section-head">
+      <header class="pf-sh"><h2 class="pf-sh-title" id="contrib-title">Contributions</h2></header>
+      <div class="pf-tags">
+        <span class="pf-tag pf-tag-soft">시스템 기획</span>
+        <span class="pf-tag pf-tag-outline">PM</span>
+      </div>
+    </div>
+
+    <!-- 기획 -->
+    <div class="contrib-group" id="design">
+      <div class="contrib-head"><h3>기획</h3><span>GAME DESIGN</span></div>
+      <div class="card-grid">
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="기획서 · 게임의 컨셉" aria-label="기획서 · 게임의 컨셉 크게 보기">
+            <img src="assets/toki/TK-05-640w.webp" alt="기획서의 게임 컨셉 페이지. 3인용 실시간 카드 게임, 섯다 족보 일부 차용, 재화 없이 카드 조합으로 승부, 동요 반달 모티프의 카드 20장" width="1497" height="844" loading="lazy" decoding="async" srcset="assets/toki/TK-05-640w.webp 640w, assets/toki/TK-05.webp 1497w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/toki/TK-05.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">제안서</span></div>
+              <a class="doc-link" href="https://drive.google.com/file/d/1FmKB5WoSoMUFoaD6mHRZx-znQSSzt8tc/view?usp=sharing" target="_blank" rel="noopener" aria-label="기획서 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">토끼들의 눈치싸움</h4>
+            <p class="work-desc">동요 '반달'을 모티프로 귀여운 달토끼들이 카드놀이를 하는 컨셉의 족보 기반 3인용 카드 게임 제안<br>베팅 없이 라운드 패배횟수로 결과 결정<br><br><br></p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="룰북 · 족보 화면" aria-label="룰북 · 족보 화면 크게 보기">
+            <img src="assets/toki/TK-06-640w.webp" alt="족보를 설명하는 룰북 화면 와이어프레임. 같은 숫자 두 장은 별, 다른 숫자는 두 수를 더한 일의 자리 달" width="1195" height="674" loading="lazy" decoding="async" srcset="assets/toki/TK-06-640w.webp 640w, assets/toki/TK-06.webp 1195w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/toki/TK-06.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">시스템 디자인</span></div>
+              <a class="doc-link" href="https://drive.google.com/file/d/1WYrgB8HV-EmU5jJ7laQUrCO260yTSRPt/view?usp=sharing" target="_blank" rel="noopener" aria-label="룰북 UI 문서 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">족보 설계</h4>
+            <p class="work-desc">20장의 카드로 플레이하는 섯다 베이스<br>중간 족보를 삭제해 진입 장벽 완화<br>'별', '달'이라는 친근한 용어로 캐주얼한 게임성<br></p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <button type="button" class="work-thumb" data-zoom data-caption="참가·퇴청 선택 화면" aria-label="참가·퇴청 선택 화면 크게 보기">
+            <img src="assets/toki/TK-07-640w.webp" alt="인게임 하단의 참가·퇴청 버튼과 30초 제한 타이머" width="982" height="621" loading="lazy" decoding="async" srcset="assets/toki/TK-07-640w.webp 640w, assets/toki/TK-07.webp 982w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/toki/TK-07.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">시스템 디자인</span></div>
+            </div>
+            <h4 class="work-title">낮은 패로 노리는 역전의 기회</h4>
+            <p class="work-desc">각 라운드에 IN/OUT을 정하고, OUT 플레이어의 패가 IN 플레이어의 패보다 높으면 OUT 플레이어의 패배<br>낮은 족보여도 블러핑과 전략 플레이를 통해 승리할 수 있음<br><br></p>
+          </div>
+        </article>
+
+
+
+
+      </div>
+    </div>
+
+    <!-- PM -->
+    <div class="contrib-group" id="pm">
+      <div class="contrib-head"><h3>PM</h3><span>PROJECT MANAGEMENT</span></div>
+      <div class="card-grid">
+
+
+        <article class="work-card">
+          <button type="button" class="work-thumb is-cover is-top" data-zoom data-caption="출시 관련 정보 모음 문서" aria-label="출시 관련 정보 모음 문서 크게 보기">
+            <img src="assets/toki/TK-08-640w.webp" alt="토끼의 거짓말 출시 관련 정보 모음 문서. 직군별 출시 작업 분배와 출시까지 필요한 3가지 절차" width="1187" height="1090" loading="lazy" decoding="async" srcset="assets/toki/TK-08-640w.webp 640w, assets/toki/TK-08.webp 1187w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/toki/TK-08.webp">
+          </button>
+          <div class="work-body">
+            <div class="work-meta">
+              <div class="pf-tags"><span class="pf-tag pf-tag-outline">출시 관리</span></div>
+              <a class="doc-link" href="https://store.steampowered.com/app/4081810/" target="_blank" rel="noopener" aria-label="Steam 스토어 페이지 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+            </div>
+            <h4 class="work-title">Steam 출시</h4>
+            <p class="work-desc">Steamworks 출시 절차를 문서로 정리해 업무 분담<br>상점 페이지 2주 공개 등 출시 조건을 맞춰 <br>2025.12.22 무료 게임으로 출시</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- QA -->
+  </section>
+
+  <!-- ============ 유저 피드백 ============ -->
+  <section class="detail-section" aria-labelledby="feedback-title">
+    <header class="pf-sh"><h2 class="pf-sh-title" id="feedback-title">User Feedback</h2></header>
+
+    <div class="survey">
+      <div class="survey-intro">
+        <div class="survey-kicker">EVALUATION</div>
+        <div class="survey-title">유저 반응</div>
+        <div class="survey-note">Steam 사용자 리뷰<br>CIEN 2025 튜토리얼 프로젝트 발표회 투표 </div>
+      </div>
+      <div class="survey-bars">
+        <div class="bar" data-unit="건">
+          <div class="bar-head"><span class="bar-name">Steam 리뷰 추천</span><span class="bar-score">12 <span>/ 13</span></span></div>
+          <div class="bar-track" role="img" aria-label="Steam 리뷰 추천 12/13건"><span style="width: 92.3%;"></span></div>
+        </div>
+        <div class="bar" data-unit="명">
+          <div class="bar-head"><span class="bar-name">동아리 발표회 '인상 깊은 팀'</span><span class="bar-score">10 <span>/ 15</span></span></div>
+          <div class="bar-track" role="img" aria-label="발표회 인상 깊은 팀 투표 10/15명"><span style="width: 66.7%;"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-grid">
+
+      <article class="work-card">
+        <button type="button" class="work-thumb" data-zoom data-caption="봇 추가 전후 Steam 리뷰" aria-label="봇 추가 전후 Steam 리뷰 크게 보기">
+          <img src="assets/toki/TK-09-640w.webp" alt="봇 추가 전후 Steam 추천 리뷰 비교. 매칭이 안 잡힌다는 리뷰가 봇 추가 후 AI가 있어 재밌게 즐겼다는 리뷰로 바뀜" width="1319" height="861" loading="lazy" decoding="async" srcset="assets/toki/TK-09-640w.webp 640w, assets/toki/TK-09.webp 1319w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 344px" data-full="assets/toki/TK-09.webp">
+        </button>
+        <div class="feedback-body">
+          <div class="work-meta">
+            <div class="pf-tags"><span class="pf-tag pf-tag-outline">라이브 운영</span><span class="pf-tag pf-tag-outline">운영 의사결정</span></div>
+            <a class="doc-link" href="https://store.steampowered.com/news/app/4081810/view/373368994105657772?l=koreana" target="_blank" rel="noopener" aria-label="봇 추가 업데이트 소식 열기 (새 탭)" title="관련 문서 열기"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
+          </div>
+          <h4 class="work-title">매칭 문제와 봇 추가</h4>
+          <div class="feedback-quote">
+            <span class="feedback-label">받은 피드백</span>
+            <p class="feedback-text">“재밌는데 매칭이 안잡혀요 ㅠㅠ” <br>(출시일 최대 동시 접속 6명) </p>
+          </div>
+          <div class="feedback-change">
+            <span class="feedback-label feedback-label-brand">반영</span>
+            <p class="feedback-text">2026.01.18 봇 추가 업데이트<br></p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <nav class="next-nav" aria-label="프로젝트 이동">
+    <a class="next-link prev-link" href="square-erauqs.html"><small>← 이전 프로젝트</small><strong>SQUARE::ERAUQS</strong></a>
+    <a class="next-link" href="aurora.html"><small>다음 프로젝트 →</small><strong>Eulerian Aurora</strong></a>
+  </nav>
+
+</main>
+
+<!-- 확대 보기 -->
+<dialog class="lightbox" data-lightbox aria-label="크게 보기">
+  <button type="button" class="lightbox-close" data-lightbox-close aria-label="닫기"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg></button>
+  <div class="lightbox-media" data-lightbox-media></div>
+  <div class="lightbox-caption" data-lightbox-caption></div>
+</dialog>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
