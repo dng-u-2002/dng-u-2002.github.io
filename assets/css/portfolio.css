@@ -1090,7 +1090,9 @@ a.pf-card:hover .pf-card-hover-logo, a.pf-card:focus-visible .pf-card-hover-logo
 
 .mini-list { border-top: 1px solid var(--border); margin-top: 8px; }
 .mini-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; padding: 16px 0; border-bottom: 1px solid var(--border); }
-.mini-title { flex: 0 1 240px; font-size: 18px; font-weight: 600; }
+.mini-head { flex: 0 1 300px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.mini-title { font-size: 18px; font-weight: 600; }
+.mini-link { margin-left: auto; }
 .mini-desc { flex: 1 1 320px; font-size: 14px; line-height: 22px; color: var(--ink-muted); }
 
 .tile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column; }
