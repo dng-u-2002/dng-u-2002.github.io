@@ -1050,6 +1050,16 @@ a.pf-card:hover { color: inherit; box-shadow: var(--shadow-hover); border-color:
 a.pf-card:hover .has-hover-logo::after, a.pf-card:focus-visible .has-hover-logo::after { background: rgba(20, 14, 10, 0.45); }
 a.pf-card:hover .pf-card-hover-logo, a.pf-card:focus-visible .pf-card-hover-logo { opacity: 1; transform: none; }
 .pf-card-ext { margin-top: auto; padding-top: 4px; font-size: 13px; line-height: 20px; font-weight: 600; color: var(--brand); }
+/* Split card: not clickable as a whole; links live in .pf-card-actions */
+.pf-card-body:has(.pf-card-actions) { flex: 1 1 auto; }
+.pf-card-actions { margin-top: auto; padding-top: var(--space-2); display: flex; flex-wrap: wrap; gap: var(--space-2); }
+/* Video thumbnail: zoom-in cursor + slight scale, same as the award photos */
+button.pf-card-thumb { width: 100%; border: 0; margin: 0; padding: 0; font: inherit; color: inherit; cursor: zoom-in; }
+button.pf-card-thumb:focus-visible { outline-offset: -3px; }
+button.pf-card-thumb video { transition: transform .25s; }
+button.pf-card-thumb:hover video { transform: scale(1.02); }
+button.pf-card-thumb.has-hover-logo:hover::after, button.pf-card-thumb.has-hover-logo:focus-visible::after { background: rgba(20, 14, 10, 0.45); }
+button.pf-card-thumb:hover .pf-card-hover-logo, button.pf-card-thumb:focus-visible .pf-card-hover-logo { opacity: 1; transform: none; }
 /* 카드 머리: [게임 아이콘] 장르 / 제목 — 아이콘이 없으면 글자만 */
 .pf-card-head { display: flex; align-items: center; gap: 16px; }
 .pf-card-icon { flex: none; width: 64px; height: 64px; object-fit: contain; }
