@@ -1141,6 +1141,9 @@ button.pf-card-thumb:hover .pf-card-hover-logo, button.pf-card-thumb:focus-visib
 }
 
 .activity-body { padding: 24px; display: flex; flex-direction: column; gap: 8px; }
+.activity-head { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 12px; }
+.activity-logo { flex: 0 0 auto; display: block; width: 72px; height: auto; }
+.activity-head-text { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
 .activity-title { font-size: 20px; line-height: 28px; font-weight: 600; }
 .activity-org { font-size: 14px; line-height: 22px; color: var(--brand); }
 .activity-list { margin: 0; padding-left: 20px; font-size: 15px; line-height: 24px; display: flex; flex-direction: column; gap: 4px; }
